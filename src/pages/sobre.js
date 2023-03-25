@@ -1,10 +1,9 @@
-import { useParams } from "react-router-dom"
+import About from "../components/About"
 
 export default function Sobre() {
-    const { name } = useParams()
     return (
         <div >
-            <p>Olá usuário {name}!</p>
+            <About />
         </div>
     )
 }

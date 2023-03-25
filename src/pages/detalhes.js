@@ -45,6 +45,24 @@ export default function Detalhes() {
                     <p>Ano: {filmes[0].ano}</p>
                   </div>
                 )
+              } else if (filme === 'Spiderman - Far from home') {
+                return (
+                    <div>
+                        <p>Sinopse: {filmes[1].descricao}</p>
+                        <p>Gênero: {filmes[1].genero}</p>
+                        <p>Ano: {filmes[1].ano}</p>
+                        <p>Nota: {filmes[1].nota}</p>
+                    </div>
+                )
+            } else if (filme === 'Shrek') {
+                return (
+                    <div>
+                        <p>Sinopse: {filmes[2].descricao}</p>
+                        <p>Gênero: {filmes[2].genero}</p>
+                        <p>Ano: {filmes[2].ano}</p>
+                        <p>Nota: {filmes[2].nota}</p>
+                    </div>
+                )
               }
           })()}
         </div>

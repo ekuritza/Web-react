@@ -4,7 +4,8 @@ import Sobre from './pages/sobre'
 import Planos from './pages/planos'
 import Detalhes from './pages/detalhes';
 import Footer from './components/Footer/index';
-import PageNotFound from './pages/pageNotFound';
+import { PageNotFound } from './components/pageNotFound';
+
 
 export default function App() {
   return (
@@ -17,7 +18,7 @@ export default function App() {
                 </a>
                 <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
                     <li><Link class="nav-link px-2 link-secondary" to='/'>Home</Link></li>
-                    <li><Link class="nav-link px-2 link-dark" to='/sobre/Edu'>Sobre</Link></li>
+                    <li><Link class="nav-link px-2 link-dark" to='/sobre'>Sobre</Link></li>
                     <li><Link class="nav-link px-2 link-dark" to='/plano'>Planos</Link></li>
                 </ul>
                 <div class="col-md-3 text-end">
@@ -29,10 +30,10 @@ export default function App() {
       
       <Routes>
         <Route path='/' element={<Home />}/>
-        <Route path='/sobre/:name' element={<Sobre />}/>
+        <Route path='/sobre' element={<Sobre />}/>
         <Route path='/plano' element={<Planos />}/>
         <Route path='/detalhes/:filme' element={<Detalhes />}/>
-        <Route path='/pageNotFound' element={<PageNotFound />}/>
+        <Route path='*' element={<PageNotFound />}/>
       </Routes>
       <Footer />
     </Router>
