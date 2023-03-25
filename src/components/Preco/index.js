@@ -52,7 +52,7 @@ export default function Preco() {
               <h4 className="my-0 font-weight-normal">Plano Gold</h4>
             </div>
             <div className="card-body">
-              <h1 className="card-title pricing-card-title">70,00 R$ <small className="text-muted">/ mês</small></h1>
+              <h1 className="card-title pricing-card-title">100,00 R$ <small className="text-muted">/ mês</small></h1>
               <ul className="list-unstyled mt-3 mb-4">
                 <li>6 Telas compartilahdas</li>
                 <li>Resolução 4K</li>
